@@ -7,7 +7,7 @@ class MathModule : BaseModule() {
         super.configure()
 
         addBinding(
-            MathSumEvent::class.java
+            MathSumEvent::class
         )
     }
 }

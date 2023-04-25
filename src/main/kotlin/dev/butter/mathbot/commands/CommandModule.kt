@@ -7,8 +7,8 @@ class CommandModule : BaseModule() {
         super.configure()
 
         addBinding(
-            MathStartCommand::class.java,
-            MathEndCommand::class.java,
+            MathStartCommand::class,
+            MathEndCommand::class,
         )
     }
 }

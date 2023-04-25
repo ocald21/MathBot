@@ -10,7 +10,8 @@ import net.dv8tion.jda.api.entities.channel.middleman.MessageChannel
 
 @Singleton
 data class MathSumEvent
-@Inject constructor(
+@Inject
+constructor(
     private var bot: JDA,
     private var parser: Parser
 ) : Addon {

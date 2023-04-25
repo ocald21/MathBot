@@ -42,5 +42,11 @@ class AddonLoader {
     }
 
     fun unload() {
+        addons.forEach { addon ->
+            when (addon) {
+                is CommandAddon -> bot.removeEventListener(addon)
+                is ListenerAddon -> bot.removeEventListener(addon)
+            }
+        }
     }
 }

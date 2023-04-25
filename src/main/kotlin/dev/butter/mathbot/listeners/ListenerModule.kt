@@ -7,7 +7,7 @@ class ListenerModule : BaseModule() {
         super.configure()
 
         addBinding(
-            MessageListener::class.java,
+            MessageListener::class,
         )
     }
 }

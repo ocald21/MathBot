@@ -7,7 +7,7 @@ class ParserModule : BaseModule() {
         super.configure()
 
         addBinding(
-            Parser::class.java,
+            Parser::class,
         )
     }
 }

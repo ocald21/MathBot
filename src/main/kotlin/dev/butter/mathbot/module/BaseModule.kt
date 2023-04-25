@@ -1,15 +1,16 @@
 package dev.butter.mathbot.module
 
-import com.google.inject.AbstractModule
-import com.google.inject.multibindings.Multibinder
+import com.authzee.kotlinguice4.KotlinModule
+import com.authzee.kotlinguice4.multibindings.KotlinMultibinder
+import kotlin.reflect.KClass
 
-abstract class BaseModule : AbstractModule() {
-    private lateinit var addonBinder: Multibinder<Addon>
+abstract class BaseModule : KotlinModule() {
+    private lateinit var addonBinder: KotlinMultibinder<Addon>
 
     override fun configure() {
-        addonBinder = Multibinder.newSetBinder(binder(), Addon::class.java)
+        addonBinder = KotlinMultibinder.newSetBinder(kotlinBinder)
     }
 
-    protected fun addBinding(vararg clazz: Class<out Addon>) =
-        clazz.forEach { addonBinder.addBinding().to(it) }
+    protected fun addBinding(vararg clazz: KClass<out Addon>) =
+        clazz.forEach { addonBinder.addBinding().to(it.java) }
 }
