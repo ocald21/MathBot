@@ -4,21 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7342acce-8498-4cbd-9cd1-436df1fe5e13" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+    <list default="true" id="7342acce-8498-4cbd-9cd1-436df1fe5e13" name="Changes" comment="conversion to JavaPlugin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/Main.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/commands/CommandModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/commands/CommandModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/listeners/ListenerModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/listeners/ListenerModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/math/MathModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/math/MathModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/math/MathSumEvent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/math/MathSumEvent.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/module/AddonLoader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/module/AddonLoader.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/module/BaseModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/module/BaseModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/module/InjectorModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/module/InjectorModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/module/MathBot.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/module/MathBot.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/panebuilders/PaneBuilders.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/parser/ParserModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/parser/ParserModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/listeners/MessageListener.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/listeners/MessageListener.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/parser/Parser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/parser/Parser.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,10 +191,20 @@
       <option name="presentableId" value="Default" />
       <updated>1677960039025</updated>
     </task>
+    <task id="LOCAL-00001" summary="conversion to JavaPlugin">
+      <created>1682445502417</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682445502417</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="conversion to JavaPlugin" />
+    <option name="LAST_COMMIT_MESSAGE" value="conversion to JavaPlugin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,14 +1,16 @@
 package dev.butter.mathbot.listeners
 
 import com.google.inject.Inject
-import dev.butter.mathbot.module.ListenerAddon
 import dev.butter.mathbot.math.MathSumEvent
+import dev.butter.mathbot.module.ListenerAddon
+import dev.butter.mathbot.parser.Parser
 import net.dv8tion.jda.api.entities.emoji.Emoji
 import net.dv8tion.jda.api.events.GenericEvent
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent
 
 class MessageListener : ListenerAddon {
     @Inject private lateinit var mathSumEvent: MathSumEvent
+    @Inject private lateinit var parser: Parser
 
     override fun onEvent(event: GenericEvent) {
         if (event !is MessageReceivedEvent) {
@@ -27,7 +29,7 @@ class MessageListener : ListenerAddon {
             return
         }
 
-        if (message.contentRaw.first() == '(') {
+        if (message.contentRaw.first() == '(' && parser.isValid(message.contentRaw)) {
             message.addReaction(Emoji.fromUnicode("U+1F44D")).queue()
             mathSumEvent.messageList += message
         } else {
