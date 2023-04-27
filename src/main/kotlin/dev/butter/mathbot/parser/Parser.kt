@@ -16,6 +16,8 @@ class Parser : Addon {
         MathBot.log("success: $success, confirmed: $confirmed, message: $message")
     }
 
+    fun symbolParse(input: String) = input.replace("×", "*", true)
+
     fun isValid(input: String) = Expression(input).checkSyntax()
 
     fun solve(input: String): Int {

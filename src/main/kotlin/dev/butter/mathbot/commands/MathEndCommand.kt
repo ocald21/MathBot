@@ -1,9 +1,10 @@
 package dev.butter.mathbot.commands
 
 import com.google.inject.Inject
-import dev.butter.mathbot.module.CommandAddon
 import dev.butter.mathbot.math.MathSumEvent
+import dev.butter.mathbot.module.CommandAddon
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent
+import java.util.concurrent.TimeUnit
 
 class MathEndCommand : CommandAddon("end", "Ends a math session!") {
     @Inject private lateinit var mathSumEvent: MathSumEvent
@@ -22,8 +23,7 @@ class MathEndCommand : CommandAddon("end", "Ends a math session!") {
             else -> {
                 event.reply("Ending math session!").queue()
                 mathSumEvent.end()
-                channel.sendMessage("The answer is:").queue()
-                channel.sendMessage(mathSumEvent.answer.toString()).queue()
+                channel.sendMessage("The answer is: ${mathSumEvent.answer}").queueAfter(1, TimeUnit.SECONDS)
             }
         }
     }

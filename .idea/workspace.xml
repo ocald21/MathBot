@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7342acce-8498-4cbd-9cd1-436df1fe5e13" name="Changes" comment="conversion to JavaPlugin">
+    <list default="true" id="7342acce-8498-4cbd-9cd1-436df1fe5e13" name="Changes" comment="init commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/commands/MathEndCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/commands/MathEndCommand.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/listeners/MessageListener.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/listeners/MessageListener.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/math/MathSumEvent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/math/MathSumEvent.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/module/Addon.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/module/Addon.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/parser/Parser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/parser/Parser.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,18 +40,6 @@
                 <item name="MathBot" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="MathBot" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="help" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="MathBot" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="shadow" type="c8890929:TasksNode$1" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -65,6 +56,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="KotlinCodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
@@ -89,6 +81,7 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/omarc/Desktop/intellij-projects/CannoningEssentials&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
@@ -130,6 +123,7 @@
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
     <configuration name="MathBot [shadowJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -151,6 +145,7 @@
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
     <configuration name="MathBot-1.0-SNAPSHOT-all.jar" type="JarApplication" temporary="true">
@@ -191,20 +186,20 @@
       <option name="presentableId" value="Default" />
       <updated>1677960039025</updated>
     </task>
-    <task id="LOCAL-00001" summary="conversion to JavaPlugin">
-      <created>1682445502417</created>
+    <task id="LOCAL-00001" summary="init commit">
+      <created>1678129546149</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1682445502417</updated>
+      <updated>1678129546149</updated>
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="conversion to JavaPlugin" />
-    <option name="LAST_COMMIT_MESSAGE" value="conversion to JavaPlugin" />
+    <MESSAGE value="init commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

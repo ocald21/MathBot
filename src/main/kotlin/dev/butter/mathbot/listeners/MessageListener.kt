@@ -29,9 +29,11 @@ class MessageListener : ListenerAddon {
             return
         }
 
-        if (message.contentRaw.first() == '(' && parser.isValid(message.contentRaw)) {
+        val parsedMessage = parser.symbolParse(message.contentRaw)
+
+        if (parser.isValid(parsedMessage)) {
             message.addReaction(Emoji.fromUnicode("U+1F44D")).queue()
-            mathSumEvent.messageList += message
+            mathSumEvent.equations += parsedMessage
         } else {
             message.addReaction(Emoji.fromUnicode("U+1F44E")).queue()
         }
