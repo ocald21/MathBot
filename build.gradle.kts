@@ -43,14 +43,17 @@ dependencies {
     implementation("net.dv8tion:JDA:5.0.0-beta.5") {
         exclude(module="opus-java")
     }
-    implementation("ch.qos.logback:logback-classic:1.2.8")
+    implementation("ch.qos.logback:logback-classic:1.2.9")
     implementation("org.mariuszgromada.math:MathParser.org-mXparser:5.2.1")
 
     compileOnly("org.bukkit:bukkit:1.8.8-R0.1-SNAPSHOT")
 }
 
 tasks.shadowJar {
-    minimize()
+    relocate("org.slf4j", "dev.butter.mathbot.slf4j")
+    relocate("com.google.inject", "dev.butter.mathbot.guice")
+    relocate("com.authzee.kotlinguice4", "dev.authzee.kotlinguice4")
+
     archiveFileName.set("MathDiscordBot.jar")
 }
 
