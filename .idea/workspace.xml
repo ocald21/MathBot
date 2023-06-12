@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7342acce-8498-4cbd-9cd1-436df1fe5e13" name="Changes" comment="parsing fixes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/parser/Parser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/butter/mathbot/parser/Parser.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +99,7 @@
       <recent name="dev.butter.mathbot" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MathBot [shadowJar]">
+  <component name="RunManager" selected="Gradle.MathBot [clean]">
     <configuration name="MathBot [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -158,8 +158,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.MathBot [shadowJar]" />
         <item itemvalue="Gradle.MathBot [clean]" />
+        <item itemvalue="Gradle.MathBot [shadowJar]" />
         <item itemvalue="JAR Application.mathbot.jar" />
         <item itemvalue="JAR Application.MathBot-1.0-SNAPSHOT-all.jar" />
         <item itemvalue="JAR Application.MathBot-1.0-SNAPSHOT.jar" />
