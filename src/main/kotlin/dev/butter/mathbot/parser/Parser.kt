@@ -20,11 +20,11 @@ class Parser : Addon {
 
     fun isValid(input: String) = Expression(input).checkSyntax()
 
-    fun solve(input: String): Int {
+    fun solve(input: String): Long {
         val expression = Expression(input)
 
         val answer = expression.calculate()
 
-        return if (answer.isNaN()) 0 else answer.toInt()
+        return if (answer.isNaN()) 0 else answer.toLong()
     }
 }

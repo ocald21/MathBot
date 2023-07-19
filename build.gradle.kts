@@ -33,6 +33,7 @@ dependencies {
     shadow("junit:junit:4.13.2")
 
     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.8.20")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2")
 
     implementation("com.google.inject:guice:4.1.0")
     implementation("com.google.inject.extensions:guice-multibindings:4.1.0")
@@ -43,6 +44,8 @@ dependencies {
     implementation("net.dv8tion:JDA:5.0.0-beta.5") {
         exclude(module="opus-java")
     }
+    implementation("com.github.minndevelopment:jda-ktx:0.10.0-beta.1")
+
     implementation("ch.qos.logback:logback-classic:1.2.9")
     implementation("org.mariuszgromada.math:MathParser.org-mXparser:5.2.1")
 
@@ -56,8 +59,3 @@ tasks.shadowJar {
 
     archiveFileName.set("MathDiscordBot.jar")
 }
-
-tasks.test {
-    useJUnitPlatform()
-}
-

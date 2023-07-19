@@ -17,7 +17,7 @@ constructor(
     var active: Boolean = false
     var messageChannel: MessageChannel? = null
     val equations: MutableList<String> = mutableListOf()
-    var answer: Int = 0
+    var answer: Long = 0
 
     fun start(channel: MessageChannel) {
         answer = 0
