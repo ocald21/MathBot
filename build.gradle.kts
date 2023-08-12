@@ -35,15 +35,14 @@ dependencies {
     compileOnly("com.authzee.kotlinguice4:kotlin-guice:1.3.0")
     compileOnly("com.authzee.kotlinguice4:kotlin-guice-multibindings:1.3.0")
 
-    implementation("com.github.DV8FromTheWorld:JDA:5.0.0-beta.5")
-    implementation("net.dv8tion:JDA:5.0.0-beta.5") {
+    compileOnly("net.dv8tion:JDA:5.0.0-beta.13") {
         exclude(module="opus-java")
     }
 
     implementation("ch.qos.logback:logback-classic:1.2.9")
     implementation("org.mariuszgromada.math:MathParser.org-mXparser:5.2.1")
 
-    compileOnly("dev.butter:skspigot:1.0")
+    compileOnly(files("C:/Users/omarc/Desktop/wine-test/WineSpigot.jar"))
 }
 
 tasks.shadowJar {

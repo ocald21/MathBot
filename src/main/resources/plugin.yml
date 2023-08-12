@@ -1,3 +1,4 @@
   name: MathDiscordBot
   main: dev.butter.mathbot.module.MathBot
   version: 1.0
+  depend: [ VerneDependencies ]
