@@ -9,7 +9,7 @@ import dev.butter.mathbot.math.MathModule
 import dev.butter.mathbot.parser.ParserModule
 import net.dv8tion.jda.api.JDA
 
-class InjectorModule (private val bot: JDA) : KotlinModule() {
+class InjectorModule(private val bot: JDA) : KotlinModule() {
     override fun configure() {
         bind(JDA::class.java).toInstance(bot)
 

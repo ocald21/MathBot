@@ -1,13 +1,7 @@
 package dev.butter.mathbot.parser
 
-import dev.butter.mathbot.module.BaseModule
+import dev.butter.mathbot.module.AddonModule
 
-class ParserModule : BaseModule() {
-    override fun configure() {
-        super.configure()
-
-        addBinding(
-            Parser::class,
-        )
-    }
-}
+class ParserModule : AddonModule(
+    Parser::class
+)

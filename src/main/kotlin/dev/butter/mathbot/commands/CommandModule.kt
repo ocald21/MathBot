@@ -1,14 +1,8 @@
 package dev.butter.mathbot.commands
 
-import dev.butter.mathbot.module.BaseModule
+import dev.butter.mathbot.module.AddonModule
 
-class CommandModule : BaseModule() {
-    override fun configure() {
-        super.configure()
-
-        addBinding(
-            MathStartCommand::class,
-            MathEndCommand::class,
-        )
-    }
-}
+class CommandModule : AddonModule(
+    MathStartCommand::class,
+    MathEndCommand::class,
+)

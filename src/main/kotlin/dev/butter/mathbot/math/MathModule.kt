@@ -1,13 +1,7 @@
 package dev.butter.mathbot.math
 
-import dev.butter.mathbot.module.BaseModule
+import dev.butter.mathbot.module.AddonModule
 
-class MathModule : BaseModule() {
-    override fun configure() {
-        super.configure()
-
-        addBinding(
-            MathSumEvent::class
-        )
-    }
-}
+class MathModule : AddonModule(
+    MathEventHandler::class
+)

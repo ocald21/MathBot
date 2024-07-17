@@ -2,18 +2,15 @@ package dev.butter.mathbot.parser
 
 import com.google.inject.Singleton
 import dev.butter.mathbot.module.Addon
-import dev.butter.mathbot.module.MathBot
 import org.mariuszgromada.math.mxparser.Expression
 import org.mariuszgromada.math.mxparser.License
 
 @Singleton
 class Parser : Addon {
     init {
-        val success = License.iConfirmNonCommercialUse("Butter Waffles")
-        val confirmed = License.checkIfUseTypeConfirmed()
-        val message = License.getUseTypeConfirmationMessage()
-
-        MathBot.log("success: $success, confirmed: $confirmed, message: $message")
+        License.iConfirmNonCommercialUse("MathBot")
+        License.checkIfUseTypeConfirmed()
+        License.getUseTypeConfirmationMessage()
     }
 
     fun symbolParse(input: String) = input.replace("x", "*", true)

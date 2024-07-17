@@ -4,10 +4,12 @@ import com.google.inject.Inject
 import net.dv8tion.jda.api.JDA
 import net.dv8tion.jda.api.interactions.commands.Command
 
-class AddonLoader {
-    @Inject private lateinit var addons: MutableSet<Addon>
-    @Inject private lateinit var bot: JDA
-
+class AddonLoader
+@Inject
+constructor(
+    private val addons: MutableSet<Addon>,
+    private val bot: JDA
+) {
     fun load() {
         var botCommands: MutableList<Command?>? = null
 

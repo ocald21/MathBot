@@ -1,13 +1,7 @@
 package dev.butter.mathbot.listeners
 
-import dev.butter.mathbot.module.BaseModule
+import dev.butter.mathbot.module.AddonModule
 
-class ListenerModule : BaseModule() {
-    override fun configure() {
-        super.configure()
-
-        addBinding(
-            MessageListener::class,
-        )
-    }
-}
+class ListenerModule : AddonModule(
+    MessageListener::class,
+)
